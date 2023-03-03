@@ -1,0 +1,8 @@
+helm repo add nginx https://helm.nginx.com/stable
+helm repo update
+helm search repo nginx-ingress -l
+helm install my-nginx-ingress nginx-stable/nginx-ingress
+helm template nginx/nginx-ingress
+helm install nginx nginx/nginx-ingress
+
+
